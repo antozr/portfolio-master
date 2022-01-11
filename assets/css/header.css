@@ -9,13 +9,14 @@
 .head__nav{
     display: flex;
     flex-direction: row;
-
-
+    justify-content: flex-end;
+    transition: 0.6s;
 }
 .head__list{
-    display: flex;
+    display: none;
     flex-direction: row;
     list-style: none;
+    transition: 0.6s;
 }
 .head__el{
     margin: 12px;
@@ -28,4 +29,105 @@
     text-decoration: none;
     padding: 5px 6px;
     scroll-behavior: smooth;
+    transition: 0.6s;
+}
+
+
+.head__btn{
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 12px 0 0 0 ;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #fff;
+    position: fixed;
+    top: 2px;
+    right: 16px;
+    z-index: 22;
+}
+.head__btn--open{
+    position: fixed;
+    top: 2px;
+    right: 16px;
+    z-index: 22;
+    background-color: #333333;
+
+}
+.head__btnBox{
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #333333;
+    transition: 0.3s;
+}
+.head__btnBox--open{
+    background-color: #fff;
+}
+.head__btnBox--open:nth-child(1){
+    transform: rotateZ(45deg) translateY(4px) translateX(4px);
+    transition: 0.6s;
+}
+.head__btnBox--open:nth-child(2){
+    width: 0;
+    transform: translateX(10px);
+    transition: 0.6s;
+}
+.head__btnBox--open:nth-child(3){
+    transform: rotateZ(-45deg) translateY(-7px) translateX(7px);
+    transition-delay: 0.1s;
+    transition: 0.6s;
+}
+.head__nav--actif{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #333333;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    transition: 0.6s;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    
+}
+.head__nav--anim{
+    animation: openMenu 0.3s ease-out;
+}
+.head__list--actif{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    height: 50vh;
+    transition: 0.6s;
+    margin: 22vh 0 0 0;
+}
+.head__link--actif{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 120%;
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+    padding: 12px 40% 12px 35%;
+}
+.head__link--actif:hover{
+    color: rgb(199, 197, 197);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+
+@keyframes openMenu {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100vw);
+    }
 }
