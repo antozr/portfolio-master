@@ -51,7 +51,8 @@ body{
     margin: 24px 0 0 0;
 }
 .sect--4{
-    margin: 70px 0 0 0 ;
+    margin: -70px 0 0 0 ;
+    padding: 190px 0 0 0;
 }
 
 
@@ -59,7 +60,7 @@ body{
 /* image */
 .sect__img{
     height: 180px;
-    width: 180px;
+    width: 100%;
     border-radius: 12px;
     grid-area: im;
     margin:  0 auto;
@@ -142,7 +143,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
     width: calc(100% - 44px);
     height: 31px;
     padding:12px 22px ;
@@ -196,7 +197,7 @@ body{
     padding: 18px 22px;
     background-color: #fff;
     border-radius: 24px;
-    margin: 40px 0 0 0 ;
+    margin: 140px 0 0 0 ;
 }
 
 .sect__hobbieCard{
@@ -234,5 +235,185 @@ body{
         "im im"
         "b1 b2"
         "p1 p1" ;
+    }
+}
+
+@media(min-width: 750px){
+
+    .main{
+        width: calc(100% - 64px);
+        padding: 0 32px;
+    }
+    .sect--1{
+        width: calc(100% - 44px);
+        height: 270px;
+        padding: 22px ;
+        background-color: #fff;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        margin: 70px 0 0 0;
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        column-gap: 24px;
+        grid-template-rows: 70px 100px 1fr;
+        row-gap: 16px;
+        grid-template-areas:
+        "im b1"
+        "im b2"
+        "p1 p1" ;
+    }
+
+    .b2{
+        grid-area: b2;
+        margin: 15px 0 0 0;
+        padding: 0px 0 0 0;
+    }
+
+
+    .sect__boxSkillAll > p {
+        flex: 0.2;
+    }
+}
+@media(min-width: 1000px){
+
+    .main{
+        width: calc(100% - 24vw);
+        padding: 0 12vw;
+    }
+    .sect--1{
+        width: calc(100% - 44px);
+        height: 270px;
+        padding: 22px ;
+        background-color: #fff;
+        box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        margin: 70px 0 0 0;
+        display: grid;
+        grid-template-columns: 30% 1fr 1fr;
+        column-gap: 24px;
+        grid-template-rows: 70px 130px ;
+        row-gap: 60px;
+        grid-template-areas:
+        "im b1 b2"
+        "im p1 p1";
+    }
+    .sect--rowSkill{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sect__boxSkillAll{
+        justify-content: space-between;
+    }
+    .sect__boxSkillAll > p {
+        flex: 0.5;
+    }
+    .sect--2{
+        width: calc(45% - 44px);
+        height: 240px;
+        padding: 22px ;
+        background-color: #fff;
+        /*box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);*/
+        border-radius: 12px;
+        margin: 24px 0 0 0;
+    }
+    .sect--3{
+        width: calc(45% - 44px);
+        height: 200px;
+        padding: 22px ;
+        background-color: #fff;
+        /*box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);*/
+        border-radius: 12px;
+        margin: 24px 0 0 0;
+    }
+    .b2{
+        grid-area: b2;
+        margin: 15px 0 0 0;
+        padding: 0px 0 0 0;
+    }
+    .sect__img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sect__boxSkillAll > p {
+        flex: 0.2;
+    }
+    
+
+    /* project */
+    .sect__project{
+        width: calc(100% - 44px);
+        padding: 22px;
+        height: 311px;
+        margin: 24px 0 0 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .project__boxInfo{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 4.5vw;
+    }
+    .project__img{
+        width: 100%;
+        min-width: 350px;
+        max-width: 580px;
+        height: 100%;
+        border-radius: 12px;
+        border: 1px solid #f4f4f4;
+        object-fit: contain;
+    }
+    .project__tagBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 18px 0 0 0 ;
+        width: 300px;
+    }
+    .sect__boxBtn{
+        width: 160px;
+        margin: 0 10vw 0 0 ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*hobbie*/
+
+    .sect--5{
+        width: calc(100% - 44px);
+        height: 346px;
+        padding: 18px 22px;
+        background-color: #fff;
+        border-radius: 24px;
+        margin: 140px 0 0 0 ;
+
+    }
+    .hobbie__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sect__hobbieCard{
+        flex: 0.3;
+        margin: 36px 0 0 0 ;
+        width: 100%;
+        height: 220px;
+        
+    }
+    .sect__hobbieCard--1{
+        margin: 26px 0 0 0 ;
+    }
+    .hobbieCard__img{
+        width: 100%;
+        height: 139px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+    .sect__project--none{
+        display: none;
+        transition: 0.3s;
     }
 }

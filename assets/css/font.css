@@ -87,6 +87,12 @@
     color: #fff;
     margin: 0 11px 0 0 ;
 }
+.project__link:hover:nth-child(1){
+    background-color: #fff;
+    border: 1px solid #FABE79;
+    color: #FABE79;
+    margin: 0 11px 0 0 ;
+}
 .project__link:hover{
     border: 1px solid rgb(250, 199, 121);
     color:  #FABE79;
@@ -99,4 +105,24 @@
     line-height: 150%;
     color: #333333;
     margin: 24px 0 0 0;
+}
+
+
+@media(min-width:750px){
+    .sect__txt{
+        font-size: 18px;
+        
+    }
+    .sect__txt--sousTitle{
+        margin: 6px 0 0 0 ;
+        width: 20ch;
+    }
+    .sect__email{
+        font-size: 18px;
+        padding: 0px 0 0 6px ;
+    }
+    .sect__txt--work{
+        margin: 18px 0 0 0 ;
+        width: 30ch;
+    }
 }

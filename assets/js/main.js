@@ -54,8 +54,6 @@ console.log(tagFirstResponsive);
 
 
 btnMenu.addEventListener('click', ()=>{
-    
-
 
     if(btnMenu.classList.contains('head__btn--open')){
         btnBox.forEach(el => {
