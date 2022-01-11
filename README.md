@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="http://www.portfolio.devchallenges.io.antoni-dumont.be/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/antozr/portfolio-master">
       Solution
     </a>
     <span> | </span>
@@ -37,20 +37,27 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](http://www.portfolio.devchallenges.io.antoni-dumont.be/assets/img.Capture.PNG)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+## The material used
+I am used the CSS, HTML and Js for create this portfolio base with my color and information. For this I have make the base with html and BEM method for structure my document, it is more easy to create the css after. 
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+## The menu
+I have make a hamburger button with animation for all screen, it is not perfect for the website in pc screen and big screen, but for this project the menu it is not important, and use the addEventListener click event for link the btn at the animation and for see the list of link.
+
+## The Js the tag
+In this project the JS is used for make the selector and vue to project with the tag select, to the click button tag in bar, the js select all project with the tag and hidden the all project without the tags. 
+
+## The grid and flex
+For the list of items/ project and other, I am use the flex box for place the differently object and use the grid for place the differently item in a card. It is to easy to make a complexe design.
+
+
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- Js vanilla / localStorage
+- Js vanilla
 - HTML 5
 - CSS 3 
 
